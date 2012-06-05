@@ -98,7 +98,7 @@
 
     <!-- groupHeader style (top level projects) -->
     <color id="groupHeader" red="0.65" green="0.75" blue="0.4" alpha="1.0" />
-    <font id="groupHeader" name="Helvetica Neue UltraLight" size="28" />
+    <font id="groupHeader" name="Helvetica Neue Light" size="28" />
     <characterStyle id="groupHeader"
         fontID="groupHeader"
         foregroundColorID="groupHeader"
