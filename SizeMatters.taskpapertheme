@@ -1,116 +1,116 @@
 <theme>
 
-    <!-- base colors -->
-    <color id="foreground" red="0.75" green="0.75" blue="0.75" alpha="1.0" />
-    <color id="background" red="0.3"  green="0.3"  blue="0.3"  alpha="1.0" />
+  <!-- base colors -->
+  <color id="foreground" red="0.75" green="0.75" blue="0.75" alpha="1.0" />
+  <color id="background" red="0.3"  green="0.3"  blue="0.3"  alpha="1.0" />
 
-    <!-- window style -->
-    <window
-        foregroundColorID="foreground"
-        backgroundColorID="background"
-        shouldUseHUDScrollers="no"
-    />
+  <!-- window style -->
+  <window
+    foregroundColorID="foreground"
+    backgroundColorID="background"
+    shouldUseHUDScrollers="no"
+  />
 
-    <!-- text view defaults -->
-    <font id="base" name="Helvetica Neue" size="16" />
-    <characterStyle id="base"
-        fontID="base"
-        foregroundColorID="foreground"
-    />
-    <paragraphStyle id="base"
-        paragraphSpacingBefore="0"
-        paragraphSpacing="0"
-        lineSpacing="0"
-        lineHeightMultiple="0.0"
-        alignment="NSLeftTextAlignment"
-    />
-    <textView
-        defaultCharacterStyleID="base"
-        insertionPointColorID="insertionPoint"
-        selectionColorID="selection"
-        handleColorID="handle"
-        tagColorID="tag"
-        shouldAntialiasText="yes"
-        shouldShowNoteHandles="no"
-        shouldShowProjectHandles="yes"
-    />
+  <!-- text view defaults -->
+  <font id="base" name="Helvetica Neue" size="16" />
+  <characterStyle id="base"
+    fontID="base"
+    foregroundColorID="foreground"
+  />
+  <paragraphStyle id="base"
+    paragraphSpacingBefore="0"
+    paragraphSpacing="0"
+    lineSpacing="0"
+    lineHeightMultiple="0.0"
+    alignment="NSLeftTextAlignment"
+  />
+  <textView
+    defaultCharacterStyleID="base"
+    insertionPointColorID="insertionPoint"
+    selectionColorID="selection"
+    handleColorID="handle"
+    tagColorID="tag"
+    shouldAntialiasText="yes"
+    shouldShowNoteHandles="no"
+    shouldShowProjectHandles="yes"
+  />
 
-    <!-- task handles -->
-    <color id="handle" extendsColorID="foreground" />
+  <!-- task handles -->
+  <color id="handle" extendsColorID="foreground" />
 
-    <!-- tags -->
-    <color id="tag" red="0.8" green="0.45" blue="0.2" alpha="1.0" />
+  <!-- tags -->
+  <color id="tag" red="0.8" green="0.45" blue="0.2" alpha="1.0" />
 
-    <!-- @done lines -->
-    <color id="doneText" red="0.5" green="0.5" blue="0.5" alpha="1.0" />
-    <characterStyle id="done"
-        foregroundColorID="doneText"
-        strikethroughStyle="NSUnderlineStyleSingle"
-    />
-    <entryRule matchesQuery="@done" contentCharacterStyleID="done" />
+  <!-- @done lines -->
+  <color id="doneText" red="0.5" green="0.5" blue="0.5" alpha="1.0" />
+  <characterStyle id="done"
+    foregroundColorID="doneText"
+    strikethroughStyle="NSUnderlineStyleSingle"
+  />
+  <entryRule matchesQuery="@done" contentCharacterStyleID="done" />
 
-    <!-- cursor -->
-    <color id="insertionPoint" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
+  <!-- cursor -->
+  <color id="insertionPoint" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
 
-    <!-- selected text -->
-    <color id="selection" red="0.35" green="0.4" blue="0.5" alpha="1.0" />
+  <!-- selected text -->
+  <color id="selection" red="0.35" green="0.4" blue="0.5" alpha="1.0" />
 
-    <!-- task style -->
-    <color id="task" red="0.9" green="0.9" blue="0.85" alpha="1.0" />
-    <font id="task" extendsFontID="base" />
-    <characterStyle id="task"
-        fontID="task"
-        foregroundColorID="task"
-    />
-    <entryRule matchesQuery="type = task"
-        lineCharacterStyleID="task"
-        paragraphStyleID="base"
-    />
+  <!-- task style -->
+  <color id="task" red="0.9" green="0.9" blue="0.85" alpha="1.0" />
+  <font id="task" extendsFontID="base" />
+  <characterStyle id="task"
+    fontID="task"
+    foregroundColorID="task"
+  />
+  <entryRule matchesQuery="type = task"
+    lineCharacterStyleID="task"
+    paragraphStyleID="base"
+  />
 
-    <!-- project style -->
-    <color id="project" red="0.65" green="0.75" blue="0.4" alpha="1.0" />
-    <font id="project" name="Helvetica Neue Light" size="20" />
-    <characterStyle id="project"
-        fontID="project"
-        foregroundColorID="project"
-    />
-    <paragraphStyle id="project"
-        extendsParagraphStyleID="base"
-        paragraphSpacingBefore="10"
-        paragraphSpacing="5"
-    />
-    <entryRule matchesQuery="type = &quot;project&quot;"
-        lineCharacterStyleID="project"
-        paragraphStyleID="project"
-    />
+  <!-- project style -->
+  <color id="project" red="0.65" green="0.75" blue="0.4" alpha="1.0" />
+  <font id="project" name="Helvetica Neue Light" size="20" />
+  <characterStyle id="project"
+    fontID="project"
+    foregroundColorID="project"
+  />
+  <paragraphStyle id="project"
+    extendsParagraphStyleID="base"
+    paragraphSpacingBefore="10"
+    paragraphSpacing="5"
+  />
+  <entryRule matchesQuery="type = &quot;project&quot;"
+    lineCharacterStyleID="project"
+    paragraphStyleID="project"
+  />
 
-    <!-- note style -->
-    <color id="note" red="0.45" green="0.65" blue="0.75" alpha="1.0" />
-    <font id="note" name="Helvetica Neue" size="16" />
-    <characterStyle id="note"
-        fontID="note"
-        foregroundColorID="note"
-    />
-    <entryRule matchesQuery="type = note"
-        lineCharacterStyleID="note"
-        paragraphStyleID="base"
-    />
+  <!-- note style -->
+  <color id="note" red="0.45" green="0.65" blue="0.75" alpha="1.0" />
+  <font id="note" name="Helvetica Neue" size="16" />
+  <characterStyle id="note"
+    fontID="note"
+    foregroundColorID="note"
+  />
+  <entryRule matchesQuery="type = note"
+    lineCharacterStyleID="note"
+    paragraphStyleID="base"
+  />
 
-    <!-- groupHeader style (top level projects) -->
-    <color id="groupHeader" red="0.65" green="0.75" blue="0.4" alpha="1.0" />
-    <font id="groupHeader" name="Helvetica Neue Light" size="28" />
-    <characterStyle id="groupHeader"
-        fontID="groupHeader"
-        foregroundColorID="groupHeader"
-    />
-    <paragraphStyle id="groupHeader"
-        extendsParagraphStyleID="base"
-        paragraphSpacingBefore="10"
-        paragraphSpacing="10"
-    />
-    <entryRule matchesQuery="isgroupheader"
-        paragraphStyleID="groupHeader"
-        lineCharacterStyleID="groupHeader"
-    />
+  <!-- groupHeader style (top level projects) -->
+  <color id="groupHeader" red="0.65" green="0.75" blue="0.4" alpha="1.0" />
+  <font id="groupHeader" name="Helvetica Neue Light" size="28" />
+  <characterStyle id="groupHeader"
+    fontID="groupHeader"
+    foregroundColorID="groupHeader"
+  />
+  <paragraphStyle id="groupHeader"
+    extendsParagraphStyleID="base"
+    paragraphSpacingBefore="10"
+    paragraphSpacing="10"
+  />
+  <entryRule matchesQuery="isgroupheader"
+    paragraphStyleID="groupHeader"
+    lineCharacterStyleID="groupHeader"
+  />
 
 </theme>
